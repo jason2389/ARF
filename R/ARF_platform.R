@@ -447,7 +447,7 @@ dripARF_predict_heterogenity <- function(samples, rRNA_counts=NULL, dripARF_dds=
         GSEA_result_df[RP,"RPSEA.NES"] <- temp$NES
         GSEA_result_df[RP,"RPSEA.NES_randZ"] <- temp$NES_rand_zscore
         GSEA_result_df[RP,"RPSEA.padj"] <- temp$p.adjust
-        GSEA_result_df[RP,"RPSEA.q"] <- temp$qvalues
+        GSEA_result_df[RP,"RPSEA.q"] <- temp$qvalue
       }
     }
 
@@ -1057,7 +1057,7 @@ dripARF_threshold_test <- function(samplesFile, organism="hs", compare="group", 
           GSEA_result_df[RP,"RPSEA.NES"] <- temp$NES
           GSEA_result_df[RP,"RPSEA.NES_randZ"] <- temp$NES_rand_zscore
           GSEA_result_df[RP,"RPSEA.padj"] <- temp$p.adjust
-          GSEA_result_df[RP,"RPSEA.q"] <- temp$qvalues
+          GSEA_result_df[RP,"RPSEA.q"] <- temp$qvalue
         }
       }
       
